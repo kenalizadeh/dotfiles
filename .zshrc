@@ -2,6 +2,7 @@
 export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
 export WORKSPACE=${HOME}/Workspace
 export PATH=${WORKSPACE}/opt:$PATH
+export XDG_CONFIG_HOME=${HOME}/.config
 
 # rbenv
 eval "$(rbenv init - zsh)"
