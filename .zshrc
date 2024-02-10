@@ -16,7 +16,5 @@ if [[ $PWD == $HOME ]]; then
 fi
 
 # starship
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
-# aliases
-alias podpush="pod trunk push *.podspec"
