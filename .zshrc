@@ -3,6 +3,7 @@ export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
 export WORKSPACE=${HOME}/Workspace
 export PATH=${WORKSPACE}/opt:$PATH
 export XDG_CONFIG_HOME=${HOME}/.config
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
 # rbenv
 eval "$(rbenv init - zsh)"
