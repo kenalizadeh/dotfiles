@@ -7,14 +7,7 @@ Repo root must be in $HOME for stow to symlink into $HOME.
 git clone git@github.com:kenalizadeh/dotfiles.git ~/.dotfiles
 ```
 ## 2
-Stow - Create symlinks
+Run script in cloned repo root directory
 ```shell
 /bin/bash ./scripts/init.sh
-```
-
-## 3
-Install dependencies/tools
-```shell
-cd scripts && \
-/bin/bash deps_install.sh
 ```
