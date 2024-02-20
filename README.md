@@ -9,11 +9,12 @@ git clone git@github.com:kenalizadeh/dotfiles.git ~/.dotfiles
 ## 2
 Stow - Create symlinks
 ```shell
-/bin/bash/ ./scripts/init.sh
+/bin/bash ./scripts/init.sh
 ```
 
 ## 3
 Install dependencies/tools
 ```shell
-/bin/bash/ ./scripts/deps_install.sh
+cd scripts && \
+/bin/bash deps_install.sh
 ```
