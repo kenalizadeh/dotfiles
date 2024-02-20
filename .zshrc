@@ -3,7 +3,7 @@ export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
 export WORKSPACE=${HOME}/Workspace
 export PATH=${WORKSPACE}/opt:$PATH
 export XDG_CONFIG_HOME=${HOME}/.config
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --preview 'bat -n --color=always {}'"
 
 # rbenv
 eval "$(rbenv init - zsh)"
@@ -17,5 +17,9 @@ if [[ $PWD == $HOME ]]; then
 fi
 
 # starship
-# eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
+alias ls="eza"
+alias cat="bat"
+# https://github.com/catppuccin/gitui#usage
+alias gitui="gitui -t mocha.ron"
