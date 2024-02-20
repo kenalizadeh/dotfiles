@@ -10,8 +10,8 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --preview 'bat -
 # Prompt format
 export PROMPT=" %F{red}%2~%f %B%F{blue}>%f%b "
 
-# ghcup
-[ -f "/Users/kenalizadeh/.ghcup/env" ] && source "/Users/kenalizadeh/.ghcup/env" # ghcup-env
+# ghcup ghcup-env
+[ -f "/Users/kenalizadeh/.ghcup/env" ] && source "/Users/kenalizadeh/.ghcup/env" 
 
 # Launch in Workspace directory
 if [[ $PWD == $HOME ]]; then
@@ -25,3 +25,7 @@ alias cat="bat"
 # gitui doesn't have a config file so gotta do this instead
 # https://github.com/catppuccin/gitui#usage
 alias gitui="gitui -t mocha.ron"
+
+# mise init
+eval "$(mise activate zsh)"
+
