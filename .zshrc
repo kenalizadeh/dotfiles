@@ -10,9 +10,6 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --preview 'bat -
 # Prompt format
 export PROMPT=" %F{red}%2~%f %B%F{blue}>%f%b "
 
-# rbenv
-eval "$(rbenv init - zsh)"
-
 # ghcup
 [ -f "/Users/kenalizadeh/.ghcup/env" ] && source "/Users/kenalizadeh/.ghcup/env" # ghcup-env
 

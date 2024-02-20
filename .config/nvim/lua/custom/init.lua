@@ -1,3 +1,4 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
--- vim.opt.signcolumn = "number"
+-- Prepend mise shims to PATH
+vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH
