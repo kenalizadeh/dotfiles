@@ -1,0 +1,7 @@
+brew "ripgrep"
+brew "bat"
+brew "jq"
+brew "stow"
+brew "tree-sitter"
+brew "eza"
+brew "gitui"

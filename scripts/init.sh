@@ -1,3 +1,1 @@
-
-stow --adopt . && \
-git restore .
+stow --adopt . && git restore .
