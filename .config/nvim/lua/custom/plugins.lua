@@ -61,7 +61,7 @@ local plugins = {
     },
     opts = {
       handlers = {},
-}
+    }
   },
   {
     "mfussenegger/nvim-dap",
