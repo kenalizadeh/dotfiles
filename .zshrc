@@ -30,4 +30,4 @@ alias gitui="gitui -t mocha.ron"
 eval "$(mise activate zsh)"
 
 # atuin init
-eval "$(atuin init zsh)"
+eval "$(atuin init zsh --disable-up-arrow)"
