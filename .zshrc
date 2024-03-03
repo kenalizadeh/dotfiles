@@ -29,3 +29,5 @@ alias gitui="gitui -t mocha.ron"
 # mise init
 eval "$(mise activate zsh)"
 
+# atuin init
+eval "$(atuin init zsh)"
