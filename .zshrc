@@ -2,7 +2,7 @@
 export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
 export WORKSPACE=${HOME}/Workspace
 # Add opt to path where optional binaries will be stored
-export PATH=${WORKSPACE}/opt:$PATH
+export PATH=${WORKSPACE}/opt/bin:$PATH
 # For some reason by default XDG_CONFIG_HOME is not set
 export XDG_CONFIG_HOME=${HOME}/.config
 # Config fzf layout, ui and to use bat for preview
@@ -27,6 +27,7 @@ alias cat="bat"
 alias gitui="gitui -t mocha.ron"
 alias nv='nvim'
 alias nf='nvim $(fzf)'
+alias cdf='cd $(dirname $(fzf))'
 
 # mise init
 eval "$(mise activate zsh)"
