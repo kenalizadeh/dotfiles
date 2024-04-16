@@ -19,7 +19,7 @@ if [[ $PWD == $HOME ]]; then
 fi
 
 # override ls -> eza
-alias ls="eza"
+alias ls="eza --git-ignore"
 # override cat -> bat
 alias cat="bat"
 # gitui doesn't have a config file so gotta do this instead
