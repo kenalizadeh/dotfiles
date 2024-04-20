@@ -18,10 +18,13 @@ if [[ $PWD == $HOME ]]; then
     cd $WORKSPACE
 fi
 
-# override ls -> eza
+# eza
 alias ls="eza --git-ignore"
-# override cat -> bat
+
+# bat
 alias cat="bat"
+
+# gitui
 # gitui doesn't have a config file so gotta do this instead
 # https://github.com/catppuccin/gitui#usage
 alias gitui="gitui -t mocha.ron"
@@ -34,3 +37,7 @@ eval "$(mise activate zsh)"
 
 # atuin init
 eval "$(atuin init zsh --disable-up-arrow)"
+
+# zoxide
+eval "$(zoxide init zsh)"
+alias cd='z'
