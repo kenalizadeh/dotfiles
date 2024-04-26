@@ -1,3 +1,5 @@
+gui:
+  windowSize: 'half'
 promptToReturnFromSubprocess: false
 os:
   editPreset: 'nvim'
