@@ -28,6 +28,10 @@ alias cat="bat"
 # gitui doesn't have a config file so gotta do this instead
 # https://github.com/catppuccin/gitui#usage
 alias gitui="gitui -t mocha.ron"
+
+# lazygit
+alias lg='lazygit'
+
 alias nv='nvim'
 alias nf='nvim $(fzf)'
 alias cdf='cd $(dirname $(fzf))'
