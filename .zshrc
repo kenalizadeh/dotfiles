@@ -1,7 +1,7 @@
 # exports
 export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
 export WORKSPACE=${HOME}/Workspace
-# Add opt to path where optional binaries will be stored
+# Add opt path where optional binaries will be stored
 export PATH=${WORKSPACE}/opt/bin:$PATH
 # For some reason by default XDG_CONFIG_HOME is not set
 export XDG_CONFIG_HOME=${HOME}/.config
@@ -9,6 +9,8 @@ export XDG_CONFIG_HOME=${HOME}/.config
 export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --preview 'bat -n --color=always {}'"
 # Prompt format
 export PROMPT=" %F{red}%2~%f %B%F{blue}>%f%b "
+# Homebrew
+export PATH=/opt/homebrew/bin:$PATH
 
 # ghcup ghcup-env
 [ -f "/Users/kenalizadeh/.ghcup/env" ] && source "/Users/kenalizadeh/.ghcup/env" 
@@ -29,8 +31,8 @@ alias cat="bat"
 # https://github.com/catppuccin/gitui#usage
 alias gitui="gitui -t mocha.ron"
 
-# lazygit
-alias lg='lazygit'
+# git client
+alias gc='lazygit'
 
 alias nv='nvim'
 alias nf='nvim $(fzf)'
