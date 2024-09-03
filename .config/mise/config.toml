@@ -1,4 +1,5 @@
 [tools]
 python = '3.11'
 ruby = '3.2.3'
+java = 'openjdk-17'
 
