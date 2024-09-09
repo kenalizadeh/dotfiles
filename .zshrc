@@ -35,7 +35,7 @@ alias gitui="gitui -t mocha.ron"
 alias gc='lazygit'
 
 alias nv='nvim'
-alias nf='nvim $(fzf)'
+alias nf='fzf | xargs nvim'
 alias cdf='cd $(dirname $(fzf))'
 
 # mise init
