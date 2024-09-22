@@ -1,3 +1,4 @@
+# formulae
 brew "ripgrep"
 brew "bat"
 brew "mise"
@@ -12,4 +13,8 @@ brew "btop"
 brew "zoxide"
 brew "cocoapods"
 brew "fzf"
-brew "shortcat"
+brew "aria2"
+
+# casks
+cask "shortcat"
+cask "rectangle"

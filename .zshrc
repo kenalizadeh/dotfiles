@@ -1,5 +1,6 @@
 # exports
 export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 export WORKSPACE=${HOME}/Workspace
 # Add opt path where optional binaries will be stored
 export PATH=${WORKSPACE}/opt/bin:$PATH
