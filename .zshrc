@@ -38,9 +38,13 @@ alias gc='lazygit'
 alias nv='nvim'
 alias nf='fzf | xargs nvim'
 alias cdf='cd $(dirname $(fzf))'
+alias cda="cd ~ && cd \$(find * -type d | fzf)"
 
 # mise init
 eval "$(mise activate zsh)"
+
+# omp init
+eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.toml)"
 
 # atuin init
 eval "$(atuin init zsh --disable-up-arrow)"
