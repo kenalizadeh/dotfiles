@@ -22,7 +22,7 @@ if [[ $PWD == $HOME ]]; then
 fi
 
 # eza
-alias ls="eza --git-ignore"
+alias ls="eza -la --git-ignore"
 
 # bat
 alias cat="bat"
@@ -44,7 +44,7 @@ alias cda="cd ~ && cd \$(find * -type d | fzf)"
 eval "$(mise activate zsh)"
 
 # omp init
-eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.toml)"
+# eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.toml)"
 
 # atuin init
 eval "$(atuin init zsh --disable-up-arrow)"
