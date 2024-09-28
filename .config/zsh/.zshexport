@@ -1,0 +1,16 @@
+# subl
+export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
+# sbin for homebrew
+export PATH=/usr/local/sbin:$PATH
+# Workspace folder
+export WORKSPACE=${HOME}/Workspace
+# Add opt path where optional binaries will be stored
+export PATH=${WORKSPACE}/opt/bin:$PATH
+# For some reason by default XDG_CONFIG_HOME is not set
+export XDG_CONFIG_HOME=${HOME}/.config
+# Config fzf layout, ui and to use bat for preview
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --preview 'bat -n --color=always {}'"
+# Prompt format
+export PROMPT=" %F{red}%2~%f %B%F{blue}>%f%b "
+# Homebrew
+export PATH=/opt/homebrew/bin:$PATH
