@@ -68,3 +68,9 @@ alias cdf='cd $(dirname $(fzf))'
 
 # same as above but search in $HOME
 alias cda="cd $HOME && cd \$(find * -type d | fzf)"
+
+# jellyfin-serve docker container id
+export JF_CONT_ID="$(docker container ls -a | rg jellyfin | awk '{print $1}')"
+alias jfstart="docker container start $JF_CONT_ID"
+alias jfstop="docker container stop $JF_CONT_ID"
+
