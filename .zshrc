@@ -30,9 +30,6 @@ fi
 # mise init
 eval "$(mise activate zsh)"
 
-# omp init
-# eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.toml)"
-
 # atuin init
 eval "$(atuin init zsh --disable-up-arrow)"
 
@@ -64,10 +61,10 @@ alias nv='nvim'
 alias nf='fzf | xargs nvim'
 
 # find and cd
-alias cdf='cd $(dirname $(fzf))'
+alias cdf='cd $(fd --type d | fzf)'
 
 # same as above but search in $HOME
-alias cda="cd $HOME && cd \$(find * -type d | fzf)"
+alias cda="cd $HOME && cdf"
 
 # jellyfin-serve docker container start/stop
 alias jfstart="docker container ls -a | rg jellyfin | awk '{print \$1}' | xargs docker container start"
