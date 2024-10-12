@@ -279,6 +279,9 @@ M.telescope = {
     ["<leader>fo"] = { "<cmd> Telescope oldfiles <CR>", "Find oldfiles" },
     ["<leader>fz"] = { "<cmd> Telescope current_buffer_fuzzy_find <CR>", "Find in current buffer" },
 
+    -- bookmarks
+    ["<leader>ma"] = { "<cmd> Telescope bookmarks list <CR>", "Search bookmarks" },
+
     -- git
     ["<leader>cm"] = { "<cmd> Telescope git_commits <CR>", "Git commits" },
     ["<leader>gt"] = { "<cmd> Telescope git_status <CR>", "Git status" },
@@ -289,7 +292,7 @@ M.telescope = {
     -- theme switcher
     ["<leader>th"] = { "<cmd> Telescope themes <CR>", "Nvchad themes" },
 
-    ["<leader>ma"] = { "<cmd> Telescope marks <CR>", "telescope bookmarks" },
+    -- ["<leader>ma"] = { "<cmd> Telescope marks <CR>", "telescope bookmarks" },
   },
 }
 
