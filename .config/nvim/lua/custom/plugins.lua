@@ -45,6 +45,13 @@ local plugins = {
     }
   },
   {
+    "darfink/vim-plist",
+    ft = "plist",
+    init = function ()
+      vim.g.plist_save_format = 'xml'
+    end
+  },
+  {
     "mfussenegger/nvim-dap",
     config = function ()
       require("core.utils").load_mappings("dap")
