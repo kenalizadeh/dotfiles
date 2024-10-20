@@ -87,6 +87,10 @@ local plugins = {
         end
       }
     end
+  },
+  {
+    "ntpeters/vim-better-whitespace",
+    lazy = false
   }
 }
 return plugins
