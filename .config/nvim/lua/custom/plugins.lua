@@ -64,7 +64,7 @@ local plugins = {
     ---@module "auto-session"
     ---@type AutoSession.Config
     opts = {
-      suppressed_dirs = { '~/', '~/Projects', '~/Downloads', '/' },
+      suppressed_dirs = { '/', '~/', '~/Projects', '~/Downloads'},
       -- log_level = 'debug',
     }
   },
@@ -91,6 +91,10 @@ local plugins = {
   {
     "ntpeters/vim-better-whitespace",
     lazy = false
+  },
+  {
+    'MeanderingProgrammer/render-markdown.nvim',
+    ft = { 'markdown', 'quarto' },
   }
 }
 return plugins
