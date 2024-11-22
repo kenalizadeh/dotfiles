@@ -3362,7 +3362,7 @@ auhal-audio-device=0
 #freetype-fontsize=0
 
 # Relative font size (integer)
-freetype-rel-fontsize=40
+freetype-rel-fontsize=60
 
 # Text opacity (integer)
 #freetype-opacity=255
