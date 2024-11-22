@@ -44,13 +44,14 @@ local plugins = {
       handlers = {},
     }
   },
-  -- {
-  --   "darfink/vim-plist",
-  --   ft = "plist",
-  --   init = function ()
-  --     vim.g.plist_save_format = 'xml'
-  --   end
-  -- },
+  {
+    "darfink/vim-plist",
+    ft = "plist",
+    enabled = false,
+    init = function ()
+      vim.g.plist_save_format = 'xml'
+    end
+  },
   {
     "mfussenegger/nvim-dap",
     config = function ()
