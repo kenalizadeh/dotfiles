@@ -43,6 +43,7 @@ alias cd='z'
 
 # eza
 alias ls="eza -la --git-ignore"
+alias lsa="eza -la"
 
 # bat
 alias cat="bat"
