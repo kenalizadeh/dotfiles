@@ -16,9 +16,10 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --preview 'bat -
 export PROMPT=" %F{green}%2~%f %B%F{red}>%f%b "
 # Homebrew
 export PATH=/opt/homebrew/bin:$PATH
+export MISE_LOG_LEVEL=error
 
 # ghcup ghcup-env
-[ -f "/Users/kenalizadeh/.ghcup/env" ] && source "/Users/kenalizadeh/.ghcup/env" 
+[ -f "/Users/kenalizadeh/.ghcup/env" ] && source "/Users/kenalizadeh/.ghcup/env"
 
 # Launch in Workspace directory
 if [[ $PWD == $HOME ]]; then
