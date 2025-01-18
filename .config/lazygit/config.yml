@@ -1,10 +1,10 @@
 gui:
-  windowSize: 'half'
+    screenMode: 'half'
 os:
-  editPreset: 'nvim'
+    editPreset: 'nvim'
 promptToReturnFromSubprocess: false
 customCommands:
-  - key: 'x'
-    context: 'global'
-    command: 'open *.xcwo*'
-    subprocess: false
+    - key: 'x'
+      context: 'global'
+      command: 'open *.xcwo*'
+      subprocess: false
