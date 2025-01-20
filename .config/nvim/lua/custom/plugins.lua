@@ -92,6 +92,68 @@ local plugins = {
   {
     'MeanderingProgrammer/render-markdown.nvim',
     ft = { 'markdown', 'quarto' },
+  },
+  {
+    "nwiizo/cargo.nvim",
+    build = "cargo build --release",
+    config = function()
+      require("cargo").setup({
+        float_window = true,
+        window_width = 0.8,
+        window_height = 0.8,
+        border = "rounded",
+        auto_close = true,
+        close_timeout = 5000,
+      })
+    end,
+    ft = { "rust" },
+    cmd = {
+      "CargoBench",
+      "CargoBuild",
+      "CargoClean",
+      "CargoDoc",
+      "CargoNew",
+      "CargoRun",
+      "CargoTest",
+      "CargoUpdate"
+    }
+  },
+  {
+    "folke/trouble.nvim",
+    opts = {},
+    cmd = "Trouble",
+    keys = {
+      {
+        "<leader>xx",
+        "<cmd>Trouble diagnostics toggle<cr>",
+        desc = "Diagnostics (Trouble)",
+      },
+      {
+        "<leader>xX",
+        "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+        desc = "Buffer Diagnostics (Trouble)",
+      },
+      {
+        "<leader>cs",
+        "<cmd>Trouble symbols toggle focus=false<cr>",
+        desc = "Symbols (Trouble)",
+      },
+      {
+        "<leader>cl",
+        "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+        desc = "LSP Definitions / references / ... (Trouble)",
+      },
+      {
+        "<leader>xL",
+        "<cmd>Trouble loclist toggle<cr>",
+        desc = "Location List (Trouble)",
+      },
+      {
+        "<leader>xQ",
+        "<cmd>Trouble qflist toggle<cr>",
+        desc = "Quickfix List (Trouble)",
+      },
+    },
   }
 }
 return plugins
