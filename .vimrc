@@ -1,5 +1,7 @@
 syntax on
 set clipboard=unnamed
+filetype on
+filetype plugin indent on
 " Delete trailing whitespaces
 command DeleteWS :%s/\s\+$//e
 " Highlight duplicate lines
