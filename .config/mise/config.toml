@@ -1,4 +1,5 @@
 [tools]
+rust = { version = "1.83.0", profile = "minimal" }
 python = '3.12'
 ruby = '3.2.3'
 java = 'openjdk-17'
