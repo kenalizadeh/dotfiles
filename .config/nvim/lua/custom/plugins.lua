@@ -120,7 +120,7 @@ local plugins = {
   },
   {
     "folke/trouble.nvim",
-    opts = {},
+    enabled = false,
     cmd = "Trouble",
     keys = {
       {
