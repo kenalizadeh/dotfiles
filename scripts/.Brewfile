@@ -18,6 +18,7 @@ brew "aria2"
 brew "yt-dlp"
 brew "fd"
 brew "ranger"
+brew "rust-analyzer"
 
 # casks
 cask "kitty"

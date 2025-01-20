@@ -3,7 +3,7 @@
 # 3. Reset local changes from stow
 # 4. Install global envs
 pushd scripts && \
-brew bundle && \
+brew bundle --file .Brewfile && \
 popd && \
 stow --adopt . && \
 git restore . && \
