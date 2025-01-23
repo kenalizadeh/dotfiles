@@ -46,10 +46,11 @@ local plugins = {
   },
   {
     "darfink/vim-plist",
-    enabled = false,
+    event = "VeryLazy",
     ft = "plist",
     init = function()
-      vim.g.plist_save_format = 'xml'
+      vim.g.plist_display_format = 'xml'
+      vim.g.plist_save_format = ''
     end
   },
   {
