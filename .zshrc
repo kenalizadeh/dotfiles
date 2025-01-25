@@ -43,8 +43,8 @@ eval "$(zoxide init zsh)"
 alias cd='z'
 
 # eza
-alias ls="eza -la --git-ignore"
-alias lsa="eza -la"
+alias ls="eza -la"
+alias lsi="eza -la --git-ignore"
 
 # bat
 alias cat="bat"
