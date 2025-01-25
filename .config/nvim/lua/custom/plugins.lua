@@ -61,7 +61,7 @@ local plugins = {
   },
   {
     'rmagatti/auto-session',
-    lazy = false,
+    enabled = false,
     opts = {
       suppressed_dirs = { '/', '~/', '~/Projects', '~/Downloads' },
     }
