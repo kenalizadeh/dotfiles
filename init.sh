@@ -2,9 +2,11 @@
 # 2. Stow everything
 # 3. Reset local changes from stow
 # 4. Install global envs
-pushd scripts && \
-brew bundle --file .Brewfile && \
-popd && \
+dir="$(dirname "$(realpath -- "$0")")";
+
+cd $dir && \
+brew bundle --file ../.Brewfile && \
+cd .. && \
 stow --adopt . && \
 git restore . && \
 mise install
