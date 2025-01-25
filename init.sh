@@ -5,8 +5,8 @@
 dir="$(dirname "$(realpath -- "$0")")";
 
 cd $dir && \
-brew bundle --file ../.Brewfile && \
-cd .. && \
+pwd && \
+brew bundle --file .Brewfile && \
 stow --adopt . && \
 git restore . && \
 mise install
