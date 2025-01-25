@@ -1,5 +1,5 @@
 gui:
-    screenMode: 'half'
+    screenMode: 'normal'
 os:
     editPreset: 'nvim'
 promptToReturnFromSubprocess: false
