@@ -96,6 +96,7 @@ local plugins = {
   },
   {
     "nwiizo/cargo.nvim",
+    enabled = false,
     build = "cargo build --release",
     config = function()
       require("cargo").setup({
