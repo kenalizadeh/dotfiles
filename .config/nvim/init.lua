@@ -19,3 +19,7 @@ end
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
+
+vim.cmd('command! W w')
+vim.cmd('command! Q q')
+vim.cmd('command! WQ wq')
