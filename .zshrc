@@ -5,7 +5,7 @@ export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
 # sbin for homebrew
 export PATH=/usr/local/sbin:$PATH
 # Workspace folder
-export WORKSPACE=${HOME}/Workspace
+export WORKSPACE=${HOME}/workspace
 # Add opt path where optional binaries will be stored
 export PATH=${WORKSPACE}/opt/bin:$PATH
 # For some reason by default XDG_CONFIG_HOME is not set
@@ -22,20 +22,20 @@ export MISE_LOG_LEVEL=error
 [ -f "/Users/kenalizadeh/.ghcup/env" ] && source "/Users/kenalizadeh/.ghcup/env"
 
 # Launch in Workspace directory
-if [[ $PWD == $HOME ]]; then
+if [[ $PWD == $HOME && -d $WORKSPACE ]]; then
     cd $WORKSPACE
 fi
 
 # EVAL/INITS
 
 # mise init
-eval "$(mise activate zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/mise activate zsh)"
 
 # atuin init
-eval "$(atuin init zsh --disable-up-arrow)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/atuin init zsh --disable-up-arrow)"
 
 # zoxide
-eval "$(zoxide init zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/zoxide init zsh)"
 
 # ALIASES
 
@@ -72,3 +72,10 @@ alias cda="cd $HOME && cdf"
 alias jfstart="docker container ls -a | rg jellyfin | awk '{print \$1}' | xargs docker container start"
 alias jfstop="docker container ls -a | rg jellyfin | awk '{print \$1}' | xargs docker container stop"
 
+alias wezterm='flatpak run org.wezfurlong.wezterm'
+
+# homebrew eval
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# cargo
+source $HOME/.cargo/env
