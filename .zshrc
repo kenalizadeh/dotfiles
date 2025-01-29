@@ -2,6 +2,8 @@
 export XDG_CONFIG_HOME=$HOME/.config
 # subl
 export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin:$PATH
+# coreutils / optional
+# PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 # sbin for homebrew
 export PATH=/usr/local/sbin:$PATH
 # Workspace folder
@@ -29,13 +31,13 @@ fi
 # EVAL/INITS
 
 # mise init
-eval "$(/home/linuxbrew/.linuxbrew/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
 
 # atuin init
-eval "$(/home/linuxbrew/.linuxbrew/bin/atuin init zsh --disable-up-arrow)"
+eval "$(atuin init zsh --disable-up-arrow)"
 
 # zoxide
-eval "$(/home/linuxbrew/.linuxbrew/bin/zoxide init zsh)"
+eval "$(zoxide init zsh)"
 
 # ALIASES
 
@@ -49,10 +51,9 @@ alias lsi="eza -la --git-ignore"
 # bat
 alias cat="bat"
 
-# gitui
 # gitui doesn't have a config file so gotta do this instead
 # https://github.com/catppuccin/gitui#usage
-alias gitui="gitui -t mocha.ron"
+# alias gitui="gitui -t mocha.ron"
 
 # git client
 alias gc='lazygit'
@@ -72,10 +73,5 @@ alias cda="cd $HOME && cdf"
 alias jfstart="docker container ls -a | rg jellyfin | awk '{print \$1}' | xargs docker container start"
 alias jfstop="docker container ls -a | rg jellyfin | awk '{print \$1}' | xargs docker container stop"
 
-alias wezterm='flatpak run org.wezfurlong.wezterm'
-
-# homebrew eval
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-# cargo
-source $HOME/.cargo/env
+# alias for monitoring cpu temperature
+alias cputemp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
