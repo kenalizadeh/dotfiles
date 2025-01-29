@@ -1,4 +1,5 @@
 # formulae
+brew "coreutils"
 brew "ripgrep"
 brew "bat"
 brew "mise"
