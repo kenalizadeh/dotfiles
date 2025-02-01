@@ -6,4 +6,4 @@ cd $dir && \
 brew bundle --global && \
 stow --adopt . && \
 git restore . && \
-mise update
+mise install
