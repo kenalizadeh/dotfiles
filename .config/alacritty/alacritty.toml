@@ -12,5 +12,5 @@ import = [
 # Victor Mono
 # IosevkaTerm Nerd Font Mono
 # JetBrainsMono Nerd Font Mono
-normal = { family = "JetBrainsMono Nerd Font Mono", style = "Thin" }
+normal = { family = "JetBrainsMono Nerd Font Mono", style = "ExtraLight" }
 size = 24
