@@ -1,11 +1,9 @@
-# 1. Install listed deps
-# 2. Stow everything
-# 3. Reset local changes from stow
-# 4. Install global envs
+#!/bin/bash
+
 dir="$(dirname "$(realpath -- "$0")")";
 
 cd $dir && \
-pwd && \
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh && \
 brew bundle --file .Brewfile && \
 stow --adopt . && \
 git restore . && \
