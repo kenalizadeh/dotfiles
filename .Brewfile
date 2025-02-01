@@ -21,7 +21,7 @@ brew "ranger"
 brew "rust-analyzer"
 
 # casks
-cask "wezterm"
+cask "alacritty"
 cask "shortcat"
 cask "rectangle"
 cask "stats"
