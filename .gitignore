@@ -4,3 +4,4 @@
 .config/zed
 .config/colima/_lima
 .config/colima/default/daemon
+.config/colima/ssh_config

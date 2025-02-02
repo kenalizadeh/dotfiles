@@ -27,19 +27,19 @@ runtime: docker
 # Set custom hostname for the virtual machine.
 # Default: colima
 #          colima-profile_name for other profiles
-hostname: ""
+hostname: colima
 
 # Kubernetes configuration for the virtual machine.
 kubernetes:
   # Enable kubernetes.
   # Default: false
   enabled: false
-
+  
   # Kubernetes version to use.
   # This needs to exactly match a k3s version https://github.com/k3s-io/k3s/releases
   # Default: latest stable release
   version: v1.31.2+k3s1
-
+  
   # Additional args to pass to k3s https://docs.k3s.io/cli/server
   # Default: traefik is disabled
   k3sArgs:
