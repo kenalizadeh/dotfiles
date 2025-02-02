@@ -19,6 +19,8 @@ brew "yt-dlp"
 brew "fd"
 brew "ranger"
 brew "rust-analyzer"
+brew "docker"
+brew "colima"
 
 # casks
 cask "alacritty"

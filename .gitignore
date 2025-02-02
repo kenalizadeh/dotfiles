@@ -2,3 +2,5 @@
 .config/gtk*
 .config/xournalpp
 .config/zed
+.config/colima/_lima
+.config/colima/default/daemon
