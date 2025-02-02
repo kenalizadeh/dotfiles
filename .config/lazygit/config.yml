@@ -6,5 +6,5 @@ promptToReturnFromSubprocess: false
 customCommands:
     - key: 'x'
       context: 'global'
-      command: 'open *.xcwo*'
+      command: 'open . -a Xcode'
       subprocess: false
