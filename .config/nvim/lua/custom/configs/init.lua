@@ -10,3 +10,6 @@ vim.opt.relativenumber = true
 vim.opt.guicursor = ''
 -- Prepend mise shims to PATH
 vim.env.PATH = vim.env.HOME .. '/.local/share/mise/shims:' .. vim.env.PATH
+
+-- Set global highlight group
+vim.api.nvim_set_hl(0, 'Visual', { bg = '#555555', bold = false })
