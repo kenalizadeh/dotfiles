@@ -13,4 +13,4 @@ import = [
 # IosevkaTerm Nerd Font Mono
 # JetBrainsMono Nerd Font Mono
 normal = { family = "JetBrainsMono Nerd Font Mono", style = "ExtraLight" }
-size = 24
+size = 20
