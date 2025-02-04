@@ -14,7 +14,17 @@ return {
     { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
+    default_component_configs = {
+      container = {
+        -- not needed if we're enabling auto_expand_width
+        enable_character_fade = false,
+        right_padding = 10,
+      },
+    },
     window = {
+      -- minimum width ?
+      width = 20,
+      -- expand with content
       auto_expand_width = true,
     },
     filesystem = {
