@@ -14,3 +14,11 @@ import = [
 # JetBrainsMono Nerd Font Mono
 normal = { family = "JetBrainsMono Nerd Font Mono", style = "ExtraLight" }
 size = 20
+
+[keyboard]
+bindings = [
+  # alt + right to go forward by word
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  # alt + left to go back by word
+  { key = "Left", mods = "Alt", chars = "\u001BB" },
+]
