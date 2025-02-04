@@ -18,7 +18,7 @@ return {
       container = {
         -- not needed if we're enabling auto_expand_width
         enable_character_fade = false,
-        right_padding = 10,
+        right_padding = 2,
       },
     },
     window = {
