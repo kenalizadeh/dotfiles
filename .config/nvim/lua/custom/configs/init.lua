@@ -13,3 +13,11 @@ vim.env.PATH = vim.env.HOME .. '/.local/share/mise/shims:' .. vim.env.PATH
 
 -- Set global highlight group
 vim.api.nvim_set_hl(0, 'Visual', { bg = '#555555', bold = false })
+
+-- Wrap telescope preview lines
+vim.api.nvim_create_autocmd('User', {
+  pattern = 'TelescopePreviewerLoaded',
+  callback = function()
+    vim.wo.wrap = true
+  end,
+})
