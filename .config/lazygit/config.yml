@@ -8,3 +8,4 @@ customCommands:
       context: 'global'
       command: 'open . -a Xcode'
       subprocess: false
+quitOnTopLevelReturn: true
