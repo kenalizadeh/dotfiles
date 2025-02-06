@@ -1,6 +1,9 @@
 [tools]
 rust = { version = "1.83.0", profile = "default" }
 python = '3.12'
-ruby = '3.2.3'
+ruby = '3.3.0'
 java = 'openjdk-17'
 
+# this plugin fails and crashes (in my case) ruby env
+[settings]
+vfox = false
