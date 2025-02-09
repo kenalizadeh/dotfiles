@@ -21,3 +21,10 @@ vim.api.nvim_create_autocmd('User', {
     vim.wo.wrap = true
   end,
 })
+
+-- Add plist filetype
+vim.filetype.add {
+  extension = {
+    plist = 'plist',
+  },
+}
