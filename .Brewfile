@@ -20,8 +20,8 @@ brew "fd"
 brew "node"
 brew "ranger"
 brew "rust-analyzer"
-# brew "docker"
-# brew "colima"
+brew "docker"
+brew "colima"
 
 # casks
 cask "alacritty"
