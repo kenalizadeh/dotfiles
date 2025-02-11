@@ -6,3 +6,5 @@
 .config/colima/default/daemon
 .config/colima/ssh_config
 .config/karabiner/automatic_backups/*
+Library/Developer/DeveloperDiskImages
+Library/Developer/CoreSimulator
