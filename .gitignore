@@ -8,3 +8,5 @@
 .config/karabiner/automatic_backups/*
 Library/Developer/DeveloperDiskImages
 Library/Developer/CoreSimulator
+Library/Developer/Xcode/DerivedData
+Library/Developer/Xcode/UserData/XcodeCloud
