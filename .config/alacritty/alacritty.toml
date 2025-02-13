@@ -22,3 +22,6 @@ bindings = [
   # alt + left to go back by word
   { key = "Left", mods = "Alt", chars = "\u001BB" },
 ]
+
+[window]
+option_as_alt = "Both"
