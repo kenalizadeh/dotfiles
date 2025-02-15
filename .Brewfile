@@ -1,33 +1,54 @@
 # formulae
 brew "coreutils"
+# better grep
 brew "ripgrep"
-brew "bat"
-brew "mise"
-brew "jq"
-brew "stow"
-brew "tree-sitter"
+# better find
+brew "fd"
+# better ls
 brew "eza"
+# better cd
+brew "zoxide"
+# better cat
+brew "bat"
+# env manager
+brew "mise"
+# json-query
+brew "jq"
+# gnu
+brew "stow"
+# must have
+brew "tree-sitter"
+# compiler front-end
+brew "rust-analyzer"
+# git client
 brew "lazygit"
 brew "neovim"
+brew "node"
+# shell history
 brew "atuin"
+# better/fancier top
 brew "btop"
-brew "zoxide"
-brew "cocoapods"
+# fuzzy finder
 brew "fzf"
+# download utilities
 brew "aria2"
 brew "yt-dlp"
-brew "fd"
-brew "node"
+# file manager
 brew "ranger"
-brew "rust-analyzer"
 brew "docker"
+# container runtime
 brew "colima"
+# window manager
+brew "yabai"
+# hotkey daemon
+brew "skhd"
 
 # casks
 cask "alacritty"
-cask "shortcat"
-cask "rectangle"
-cask "stats"
-# cask "font-victor-mono"
+# cask "shortcat"
+# nerd font
+cask "font-jetbrains-mono-nerd-font"
+# markdown support for macOS quicklook
 cask "qlmarkdown"
+# keyboard customizer
 cask "karabiner-elements"

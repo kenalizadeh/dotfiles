@@ -1,0 +1,4 @@
+# Enable window management for floating windows
+yabai -m config window_topmost on
+yabai -m config window_shadow on
+yabai -m config layout float

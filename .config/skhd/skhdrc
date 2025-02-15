@@ -1,0 +1,32 @@
+# Snap window to the left half
+ctrl + alt - h : yabai -m window --grid 1:2:0:0:1:1
+
+# Snap window to the bottom half
+ctrl + alt - j : yabai -m window --grid 2:1:0:1:1:1
+
+# Snap window to the top half
+ctrl + alt - k : yabai -m window --grid 2:1:0:0:1:1
+
+# Snap window to the right half
+ctrl + alt - l : yabai -m window --grid 1:2:1:0:1:1
+
+# Move window to the next display
+ctrl + alt - n : yabai -m window --display next && yabai -m window --focus next
+
+# Move window to the previous display
+ctrl + alt - p : yabai -m window --display prev && yabai -m window --focus prev
+
+# Maximize the current window
+ctrl + alt - return : yabai -m window --grid 1:1:0:0:1:1
+
+# Bottom left quadrant
+ctrl + alt - left : yabai -m window --grid 2:2:0:1:1:1
+
+# Top left quadrant
+ctrl + alt - up : yabai -m window --grid 2:2:0:0:1:1
+
+# Top right quadrant
+ctrl + alt - right : yabai -m window --grid 2:2:1:0:1:1
+
+# Bottom right quadrant
+ctrl + alt - down : yabai -m window --grid 2:2:1:1:1:1
