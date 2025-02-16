@@ -29,6 +29,7 @@ return {
     },
     filesystem = {
       window = {
+        position = 'float',
         mappings = {
           ['\\'] = 'close_window',
         },
