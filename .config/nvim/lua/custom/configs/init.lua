@@ -6,8 +6,14 @@ vim.cmd 'command! WQA wqa'
 vim.cmd 'command! WQa wqa'
 vim.cmd 'command! Wqa wqa'
 
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.bo.softtabstop = 2
+
 vim.opt.relativenumber = true
 vim.opt.guicursor = ''
+
 -- Prepend mise shims to PATH
 vim.env.PATH = vim.env.HOME .. '/.local/share/mise/shims:' .. vim.env.PATH
 
