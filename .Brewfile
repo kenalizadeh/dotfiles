@@ -1,3 +1,6 @@
+# taps
+tap "koekeishiya/formulae"
+
 # formulae
 brew "coreutils"
 # better grep
@@ -39,9 +42,9 @@ brew "docker"
 # container runtime
 brew "colima"
 # window manager
-brew "yabai"
+brew "koekeishiya/formulae/yabai"
 # hotkey daemon
-brew "skhd"
+brew "koekeishiya/formulae/skhd"
 
 # casks
 cask "alacritty"
