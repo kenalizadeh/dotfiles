@@ -13,7 +13,7 @@ import = [
 # IosevkaTerm Nerd Font Mono
 # JetBrainsMono Nerd Font Mono
 normal = { family = "JetBrainsMono Nerd Font Mono", style = "ExtraLight" }
-size = 18
+size = 19
 
 [keyboard]
 bindings = [
