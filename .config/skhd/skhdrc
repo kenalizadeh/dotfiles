@@ -11,10 +11,10 @@ ctrl + alt - k : yabai -m window --grid 2:1:0:0:1:1
 ctrl + alt - l : yabai -m window --grid 1:2:1:0:1:1
 
 # Move window to the next display
-ctrl + alt - n : yabai -m window --display next && yabai -m window --focus next
+ctrl + alt - n : yabai -m window --display next && yabai -m display --focus next && yababi -m window --focus $(yabai -m query --windows --window | jq '.id')
 
 # Move window to the previous display
-ctrl + alt - p : yabai -m window --display prev && yabai -m window --focus prev
+ctrl + alt - p : yabai -m window --display prev && yabai -m display --focus prev && yababi -m window --focus $(yabai -m query --windows --window | jq '.id')
 
 # Maximize the current window
 ctrl + alt - return : yabai -m window --grid 1:1:0:0:1:1
