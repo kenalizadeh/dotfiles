@@ -415,7 +415,6 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>saf', function()
         require('telescope.builtin').find_files {
           follow = true,
-          no_ignore = true,
           hidden = true,
         }
       end, { desc = '[S]earch [A]ll [F]iles' })
