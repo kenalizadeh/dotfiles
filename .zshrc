@@ -15,7 +15,7 @@ export XDG_CONFIG_HOME=${HOME}/.config
 # Config fzf layout, ui and to use bat for preview
 export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --preview 'bat -n --color=always {}'"
 # Prompt format
-export PROMPT=" %F{green}%2~%f %B%F{red}>%f%b "
+export PROMPT=" %F{green}%3~%f %B%F{red}>%f%b "
 # Homebrew
 export PATH=/opt/homebrew/bin:$PATH
 export MISE_LOG_LEVEL=error
