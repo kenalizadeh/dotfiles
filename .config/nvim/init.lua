@@ -649,6 +649,7 @@ require('lazy').setup({
         clangd = {
           cmd = {
             'clangd',
+            '--clang-tidy',
             '--offset-encoding=utf-16',
           },
         },
