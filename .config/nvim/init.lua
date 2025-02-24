@@ -517,6 +517,7 @@ require('lazy').setup({
       -- sourcekit setup
       local lspconfig = require 'lspconfig'
       lspconfig.sourcekit.setup {
+        filetypes = { 'swift' },
         capabilities = {
           didChangeWatchedFiles = {
             dynamicRegistration = true,
