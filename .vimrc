@@ -1,11 +1,15 @@
-syntax on
 set clipboard=unnamed
+set termguicolors
+
+syntax on
 filetype on
 filetype plugin indent on
 
 :hi ErrorMsg ctermfg=1 ctermbg=0 guifg=Magenta
 :hi Error ctermfg=1 ctermbg=0 guifg=Magenta
 :hi vimError ctermfg=1 ctermbg=0 guifg=Magenta
+
+:colorscheme catppuccin_macchiato
 
 " W=w Q=q WQ=wq
 command W w
