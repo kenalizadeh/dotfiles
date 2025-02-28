@@ -483,7 +483,17 @@ require('lazy').setup({
       'WhoIsSethDaniel/mason-tool-installer.nvim',
 
       -- Useful status updates for LSP.
-      { 'j-hui/fidget.nvim', opts = {} },
+      {
+        'j-hui/fidget.nvim',
+        opts = {
+          -- Options related to integrating with other plugins
+          integration = {
+            ['xcodebuild-nvim'] = {
+              enable = false, -- Integrate with wojciech-kulik/xcodebuild.nvim (if installed)
+            },
+          },
+        },
+      },
 
       -- Allows extra capabilities provided by nvim-cmp
       'hrsh7th/cmp-nvim-lsp',
