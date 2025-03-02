@@ -28,6 +28,7 @@ brew "docker"
 brew "colima"
 brew "koekeishiya/formulae/yabai"
 brew "koekeishiya/formulae/skhd"
+brew "just"
 
 # casks
 cask "alacritty"
