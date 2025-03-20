@@ -1,4 +1,4 @@
-return {
+local alpha = {
   'goolord/alpha-nvim',
   dependencies = { 'echasnovski/mini.icons' },
   -- dependencies = { 'nvim-tree/nvim-web-devicons' },
@@ -119,3 +119,5 @@ return {
     require('alpha').setup(startify.config)
   end,
 }
+
+return {} -- alpha
