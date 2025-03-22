@@ -658,6 +658,7 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         clangd = {
+          -- filetypes = { 'c', 'cpp', 'cxx', 'glsl', 'objc', 'objcpp', 'cuda', 'proto', 'hpp' },
           cmd = {
             'clangd',
             '--clang-tidy',
@@ -769,6 +770,7 @@ require('lazy').setup({
         rust = { 'rustfmt', lsp_format = 'fallback' },
         c = { 'clang-format' },
         cpp = { 'clang-format' },
+        glsl = { 'clang-format' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
