@@ -1,3 +1,6 @@
+# explanation
+# yabai -m window --grid rows:cols:x:y:width:height
+
 # Snap window to the left half
 ctrl + alt - h : yabai -m window --grid 1:2:0:0:1:1
 
@@ -9,6 +12,9 @@ ctrl + alt - k : yabai -m window --grid 2:1:0:0:1:1
 
 # Snap window to the right half
 ctrl + alt - l : yabai -m window --grid 1:2:1:0:1:1
+
+# Snap window to the center (and size it to half the screen)
+ctrl + alt - f : yabai -m window --resize abs:$(($(yabai -m query --displays --display | jq '.frame.w / 2'))):$(($(yabai -m query --displays --display | jq '.frame.h / 2'))) && yabai -m window --move abs:$(($(yabai -m query --displays --display | jq '.frame.x + (.frame.w / 4)'))):$(($(yabai -m query --displays --display | jq '.frame.y + (.frame.h / 4)')))
 
 # Move window to the next display
 ctrl + alt - n : yabai -m window --display next && yabai -m display --focus next && yabai -m window --focus $(yabai -m query --windows --window | jq '.id')
