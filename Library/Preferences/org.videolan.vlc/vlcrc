@@ -1,5 +1,5 @@
 ﻿###
-###  vlc 3.0.20
+###  vlc 3.0.21
 ###
 
 ###
@@ -551,7 +551,7 @@ macosx-video-autoresize=0
 #sout-avi-subject=
 
 # Encoder (string)
-#sout-avi-encoder=VLC Media Player - 3.0.20 Vetinari
+#sout-avi-encoder=VLC Media Player - 3.0.21 Vetinari
 
 # Keywords (string)
 #sout-avi-keywords=
@@ -1835,7 +1835,7 @@ macosx-video-autoresize=0
 [auhal] # HAL AudioUnit output
 
 # Audio volume (integer)
-auhal-volume=243
+#auhal-volume=256
 
 # Last audio device (string)
 auhal-audio-device=0
@@ -3358,11 +3358,12 @@ auhal-audio-device=0
 # Monospace Font (string)
 #freetype-monofont=Monaco
 
+# MARK: Font size
 # Font size in pixels (integer)
-#freetype-fontsize=0
+freetype-fontsize=40
 
 # Relative font size (integer)
-freetype-rel-fontsize=60
+#freetype-rel-fontsize=0
 
 # Text opacity (integer)
 #freetype-opacity=255
@@ -3978,7 +3979,7 @@ freetype-rel-fontsize=60
 #preparse-timeout=5000
 
 # Allow metadata network access (boolean)
-metadata-network-access=1
+#metadata-network-access=0
 
 # Subdirectory behavior (string)
 #recursive=collapse
