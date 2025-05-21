@@ -15,3 +15,4 @@ Library/Developer/Xcode/UserData/XcodeCloud
 Library/Developer/Xcode/UserData/Previews
 .config/containers
 Library/Developer/Xcode
+.config/swiftpm
