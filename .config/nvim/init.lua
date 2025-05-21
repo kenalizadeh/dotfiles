@@ -524,16 +524,16 @@ require('lazy').setup({
       -- If you're wondering about lsp vs treesitter, you can check out the wonderfully
       -- and elegantly composed help section, `:help lsp-vs-treesitter`
 
-      -- sourcekit setup
-      local lspconfig = require 'lspconfig'
-      lspconfig.sourcekit.setup {
-        filetypes = { 'swift' },
-        capabilities = {
-          didChangeWatchedFiles = {
-            dynamicRegistration = true,
-          },
-        },
-      }
+      -- sourcekit setup (using conform.nvim for formatting now)
+      -- local lspconfig = require 'lspconfig'
+      -- lspconfig.sourcekit.setup {
+      --   filetypes = { 'swift' },
+      --   capabilities = {
+      --     didChangeWatchedFiles = {
+      --       dynamicRegistration = true,
+      --     },
+      --   },
+      -- }
 
       --  This function gets run when an LSP attaches to a particular buffer.
       --    That is to say, every time a new file is opened that is associated with
@@ -771,11 +771,24 @@ require('lazy').setup({
         c = { 'clang-format' },
         cpp = { 'clang-format' },
         glsl = { 'clang-format' },
+        swift = { 'swift_format' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
+      },
+      formatters = {
+        swift_format = {
+          command = 'swift-format',
+          args = {
+            '--assume-filename',
+            '$FILENAME',
+            '--configuration',
+            os.getenv 'XDG_CONFIG_HOME' .. '/swift-format/.swift-format',
+          },
+          stdin = true,
+        },
       },
     },
   },
