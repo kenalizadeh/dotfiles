@@ -9,6 +9,12 @@ customCommands:
       context: 'global'
       command: 'open . -a Xcode'
       subprocess: false
+      description: 'Open branch in Xcode'
+    - key: '<c-x>'
+      context: 'files'
+      command: 'open {{ .SelectedFile.Name }} -a Xcode'
+      subprocess: false
+      description: "Open file in Xcode"
 
 gui:
     screenMode: 'normal'
