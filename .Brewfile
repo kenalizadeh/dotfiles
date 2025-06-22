@@ -34,6 +34,8 @@ brew "just"
 # casks
 cask "alacritty"
 # cask "shortcat"
+# cask "aegisub"
+# cask "keepingyouawake"
 cask "font-jetbrains-mono-nerd-font"
 cask "qlmarkdown"
 cask "karabiner-elements"
