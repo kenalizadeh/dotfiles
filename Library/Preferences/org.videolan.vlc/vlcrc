@@ -3353,17 +3353,16 @@ auhal-audio-device=0
 [freetype] # Freetype2 font renderer
 
 # Font (string)
-#freetype-font=Helvetica Neue
+freetype-font=JetBrainsMonoNLNFM-Regular
 
 # Monospace Font (string)
 #freetype-monofont=Monaco
 
-# MARK: Font size
 # Font size in pixels (integer)
 freetype-fontsize=40
 
 # Relative font size (integer)
-#freetype-rel-fontsize=0
+freetype-rel-fontsize=20
 
 # Text opacity (integer)
 #freetype-opacity=255
