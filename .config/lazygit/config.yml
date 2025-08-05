@@ -1,42 +1,48 @@
 quitOnTopLevelReturn: true
 promptToReturnFromSubprocess: false
-
 os:
-    editPreset: 'nvim'
-
+  editPreset: 'nvim'
 customCommands:
-    - key: 'x'
-      context: 'global'
-      command: 'open . -a Xcode'
-      subprocess: false
-      description: 'Open branch in Xcode'
-    - key: '<c-x>'
-      context: 'files'
-      command: 'open {{ .SelectedFile.Name }} -a Xcode'
-      subprocess: false
-      description: "Open file in Xcode"
-
+  - key: 'x'
+    context: 'global'
+    command: 'open . -a Xcode'
+    description: 'Open branch in Xcode'
+  - key: '<c-x>'
+    context: 'files'
+    command: 'open {{ .SelectedFile.Name }} -a Xcode'
+    description: "Open file in Xcode"
+  - key: '<c-r>'
+    context: 'localBranches'
+    command: 'git reset {{ .Form.resetType }} origin/{{ .CheckedOutBranch.Name }}'
+    description: "Reset branch from origin"
+    prompts:
+    - type: "menu"
+      key: "resetType"
+      title: "select 'git reset' type"
+      options:
+        - value: "--soft"
+        - value: "--hard"
 gui:
-    screenMode: 'normal'
-    theme:
-      activeBorderColor:
-        - '#e78284'
-        - bold
-      inactiveBorderColor:
-        - '#a5adce'
-      optionsTextColor:
-        - '#8caaee'
-      selectedLineBgColor:
-        - '#414559'
-      cherryPickedCommitBgColor:
-        - '#51576d'
-      cherryPickedCommitFgColor:
-        - '#e78284'
-      unstagedChangesColor:
-        - '#e78284'
-      defaultFgColor:
-        - '#c6d0f5'
-      searchingActiveBorderColor:
-        - '#e5c890'
-    authorColors:
-      '*': '#babbf1'
+  screenMode: 'normal'
+  theme:
+    activeBorderColor:
+      - '#e78284'
+      - bold
+    inactiveBorderColor:
+      - '#a5adce'
+    optionsTextColor:
+      - '#8caaee'
+    selectedLineBgColor:
+      - '#414559'
+    cherryPickedCommitBgColor:
+      - '#51576d'
+    cherryPickedCommitFgColor:
+      - '#e78284'
+    unstagedChangesColor:
+      - '#e78284'
+    defaultFgColor:
+      - '#c6d0f5'
+    searchingActiveBorderColor:
+      - '#e5c890'
+  authorColors:
+    '*': '#babbf1'
